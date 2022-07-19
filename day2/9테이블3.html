@@ -1,0 +1,79 @@
+<!-- 작성자 : 한성구 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2_표3</title>
+    <style>
+        td,th{
+            background-color: antiquewhite;
+            padding: 10px;
+            border: 3px solid gray;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td.time{
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th style="color:blue;">SAT</th>
+            <th style="color:red;">SUN</th>
+        </tr>
+        <tr>
+            <td class="time">9:00</td>
+            <td rowspan="3" colspan="5" align="center">수업</td>
+            <td rowspan="11" colspan="2" align="center">공강</td>
+        </tr>
+        <tr>
+            <td class="time">10:00</td>
+        </tr>
+        <tr>
+            <td class="time">11:00</td>
+        </tr>
+        <tr>
+            <td class="time">12:00</td>
+            <td colspan="5" align="center">점심시간</td>
+        </tr>
+        <tr>
+            <td class="time">13:00</td>
+            <td rowspan="5" colspan="5" align="center">수업</td>
+        </tr>
+        <tr>
+            <td class="time">14:00</td>
+        </tr>
+        <tr>
+            <td class="time">15:00</td>
+        </tr>
+        <tr>
+            <td class="time">16:00</td>
+        </tr>
+        <tr>
+            <td class="time">17:00</td>
+        </tr>
+        <tr>
+            <td class="time">18:00</td>
+            <td colspan="5" align="center">수업종료</td>
+            
+        </tr>
+        <tr>
+            <td class="time">19:00~24:00</td>
+            <td rowspan="5" colspan="5" align="center">휴식</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
