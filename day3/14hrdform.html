@@ -1,0 +1,103 @@
+<!-- 작성자 : 한성구 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+table{
+    max-width: 800px;
+    margin: auto;
+    border: 3px solid gray;
+}
+td{
+    padding: 10px;
+    border : 1px solid gray;
+}
+
+label.title{
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+}
+tr:last-child > td{
+    background-color: white;
+    text-align: center;
+}
+input[type=text],input[type=password],input[type=email],
+    input[type=date]{
+    width:60%;
+}
+input,select{
+    padding:6px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+h3{
+    text-align: center;
+}
+td.col1{
+    width:40%;
+}
+td.col2{
+    width:60%
+}
+    </style>
+</head>
+<body>
+    <div style="width: 70%; margin: auto;">
+    <h3>홈쇼핑 회원 등록</h3>
+    <form action="">
+        <table style="width: 100%">
+            <tr>
+                <td class="col1"><label for="lblnum" class="title mpt">회원번호(자동발생)</label></td>
+                <td class="col2"><input type="number" name="number" id="lblnum"></td>
+            </tr>
+            <tr>
+                <td class="col1"><label for="lblname" class="title mpt">회원성명</label></td>
+                <td class="col2"><input type="text" name="name" id="lblname"></td>
+            </tr>
+            <tr>
+                <td class="col1"><label for="lbltel" class="title mpt">회원전화</label></td>
+                <td class="col2"><input type="text" name="tel" id="lbltel"></td>
+            </tr>
+            <tr>
+                <td class="col1"><label for="lbladdr" class="title mpt">지역(주소)</label></td>
+                <td class="col2"><input type="text" name="addr" id="lbladdr"></td>
+            </tr>
+            <tr>
+                <td class="col1"><label for="lbldate" class="title mpt">가입일자</label></td>
+                <td class="col2"><input type="date" name="date" id="lbldate"></td>
+            </tr>
+            <tr>
+                <td class="col1"><label for="lblrank" class="title mpt">고객등급[A:VIP,B:일반,C:직원]</label></td>
+                <td class="col2"><input type="text" name="rank" id="lblrank"></td>
+            </tr>
+            <tr>
+                <td class="col1"><label for="lblcity" class="title mpt">도시코드</label></td>
+                <td class="col2"><input type="number" name="city" id="lblcity"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- intput은 type 생략되면 text가 기본값 -->
+                    <!-- submit 이 서버로 입력데이터를 전송(제출) -->
+                    <!-- button은 기본 동작이 submit -->
+                    <!-- <input type="button" value="버튼"> 
+                    <input type="submit" value="제출">
+                    <input type="reset" value="초기화">
+                    -->
+                    <button>등록</button>
+                    <button type="button" onclick="location.href='15hrdtable.html'">조회</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
