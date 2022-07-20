@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
     <style>
+        body{
+            background-color: lightgrey;
+        }
 table{
     max-width: 800px;
     margin: auto;
@@ -85,14 +88,7 @@ td.col2{
                 <td class="col2"><input type="number" name="city" id="lblcity"></td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <!-- intput은 type 생략되면 text가 기본값 -->
-                    <!-- submit 이 서버로 입력데이터를 전송(제출) -->
-                    <!-- button은 기본 동작이 submit -->
-                    <!-- <input type="button" value="버튼"> 
-                    <input type="submit" value="제출">
-                    <input type="reset" value="초기화">
-                    -->
+                <td style="background-color: lightgrey;" colspan="2">
                     <button>등록</button>
                     <button type="button" onclick="location.href='15hrdtable.html'">조회</button>
                 </td>
