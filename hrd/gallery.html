@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 300px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: 180px;
+          object-fit:cover;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="gallery">
+        <a target="_blank" href="/images/angry cat2.png">
+          <img src="/images/angry cat2.png" alt="angry cat" width="600" height="400">
+        </a>
+        <div class="desc">angry cat</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="/images/rainy day.png">
+          <img src="/images/rainy day.png" alt="rainy day" width="600" height="400">
+        </a>
+        <div class="desc">rainy day</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="/day2/jerry1.png">
+          <img src="/day2/jerry1.png" alt="jerry" width="600" height="400">
+        </a>
+        <div class="desc">jerry</div>
+      </div>
+</body>
+</html>

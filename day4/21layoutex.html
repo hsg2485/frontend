@@ -1,0 +1,172 @@
+<!-- 작성자 : 한성구 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Gamja Flower', cursive;
+    font-size: medium;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: lightsteelblue;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: lightblue;
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: slategray;
+  border-radius: 10px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: lightsteelblue;
+  padding-left: 20px;
+
+}
+
+/* Fake image */
+.fakeimg {
+    width: 100%;
+    height: 180px;
+    object-fit:cover;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: lightblue;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>웹사이트 만들어보기</h1>
+</div>
+
+<div class="topnav">
+  <a href="https://www.google.com">구글</a>
+  <a href="https://www.naver.com">네이버</a>
+  <a href="https://www.youtube.com">유튜브</a>
+  <a href="/hrd/gallery.html" style="float:right">갤러리</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>뉴스</h2>
+      <div id="current_date"></p>
+        <script>
+        document.getElementById("current_date").innerHTML = Date();
+        </script>
+      </div>
+      <div class="fakeimg" style="height:200px;">
+      <img src="/images/angry cat2.png" alt="angry cat" height="100%"></div>
+      <p>고양이 화남</p>
+      <p>눈 부릅뜬거 봐라</p>
+    </div>
+    <div class="card">
+      <h2>강아지</h2>
+      <div style="height:350px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/B1CPE6WWsAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:30px;">한성구</div>
+      <p>blahblahblahblah</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div><img src="/images/rainy day.png" alt="rainy day" width="100%" height="200"></div>
+      <div><img src="/day2/jerry1.png" alt="jerry" width="100%" height="200"></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

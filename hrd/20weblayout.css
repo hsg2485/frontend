@@ -1,0 +1,55 @@
+header{
+    background-color: lightskyblue;
+    color:white;
+    padding: 40px 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+nav{
+
+}
+body{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    /* border: 1px solid blue */
+    background-color: lightcoral;
+    overflow: hidden;
+    margin: auto;
+    margin-left: -10px;
+}
+ul > li{
+    float: left;
+    /* border: 1px solid black; */
+}
+/* 위의 border 로 영역 확인 : ul 영역이 li 영역보다 작음 */
+ul > li > a{
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color:aliceblue
+}
+ul > li > a:hover {
+    background-color: black;
+    color: white;
+}
+/* ul 태그 1개일 때 이렇게 작성하기. 마지막 li 태그 스타일 */
+ul> li:last-child{
+    float:right;
+    margin-right: 20px;
+}
+main{
+    background-color: lightyellow;
+    padding:20px;
+    height: 500px;
+    margin-left: -10px;
+}
+footer{
+    background-color: lightgreen;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    margin-left: -10px;
+}
