@@ -82,11 +82,11 @@ body {
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns : pseudo 요소는 ::after, ::before */
 .row:after {
   content: "";
   display: table;
-  clear: both;
+  clear: both;  /* float:left를 클리어*/
 }
 
 /* Footer */
@@ -99,6 +99,7 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* 반응형. 너비 0px~800px는 아래의 스타일을 적용 */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -107,6 +108,7 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/* 반응형. 너비 0px~400px는 아래의 스타일을 적용 */
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
